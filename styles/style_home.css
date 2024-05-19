@@ -282,4 +282,8 @@
         padding-left: 5%;
         padding-right: 10%;
     }
+
+    #menu-btn {
+        margin-right: 13%;
+    }
 }
