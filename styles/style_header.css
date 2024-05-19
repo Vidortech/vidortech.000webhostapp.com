@@ -77,6 +77,10 @@
   font-family: var(--font-nome);
 }
 
+.softwareName{
+  margin-right: 3%;
+}
+
 .autentication,
 a {
   text-decoration: none;
