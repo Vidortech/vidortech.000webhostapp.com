@@ -190,7 +190,7 @@
     }
 }
 
-.ourServices__service {
+/* .ourServices__service {
     opacity: 0;
     z-index: 0;
     transition: opacity 0.5s ease;
@@ -198,7 +198,7 @@
 
 .ourServices__service.visible {
     opacity: 1;
-}
+} */
 
 
 @media only screen and (max-width: 1090px) {
