@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/react"
+
 const menuBtn = document.getElementById('menu-btn');
 const menu = document.querySelector('.menu');
 const menuVisibleClass = 'menu-visible'; // Classe que controla a visibilidade do menu
