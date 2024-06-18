@@ -214,3 +214,91 @@ a {
 .menu ul li:hover::after {
   width: 100%;
 }
+
+
+
+@media only screen and (max-width: 1090px) {
+  :root {
+      --tamanho-nome: 2rem;
+      --tamanho-normal: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  :root {
+      --tamanho-nome: 2rem;
+      --tamanho-normal: 1rem;
+  }
+
+  .principal__cabecalho__buttons {
+      display: none;
+  }
+
+  #menu-btn {
+      display: block;
+  }
+
+  .signInButton {
+      display: none;
+  }
+
+  .autentication,
+  a {
+      text-decoration: none;
+      align-items: center;
+      font-size: 1.4rem;
+      padding: 1%;
+  }
+
+  .ourServices__services {
+      flex-direction: column;
+      /* Altera o layout para coluna */
+      align-items: center;
+      /* Centraliza os serviços na coluna */
+  }
+
+  .ourServices__service {
+      width: 90%;
+      /* Define a largura dos serviços para 90% da largura da tela */
+      margin-bottom: 20px;
+      /* Adiciona margem inferior para separar os serviços */
+  }
+
+  .moreAboutOurBrand__image {
+      min-height: 400px;
+  }
+
+  .imagem__header {
+      min-height: 600px;
+  }
+}
+
+@media only screen and (max-width: 679px) {
+  :root {
+      --tamanho-nome: 1.7rem;
+      --tamanho-normal: 0.9rem;
+  }
+
+  .indicePresentation {
+      width: auto;
+  }
+
+  .moreAboutOurBrand__text {
+      width: 90%;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .indicePresentation {
+      min-height: 250px;
+  }
+
+  .autentication {
+      padding-left: 5%;
+      padding-right: 25%;
+  }
+
+  #menu-btn {
+      margin-right: 13%;
+  }
+}
