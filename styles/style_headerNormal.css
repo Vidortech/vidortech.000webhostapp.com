@@ -30,6 +30,9 @@
 
 }
 
+header {
+  width: 100vw;
+}
 
 .imagem__header {
   display: flex;
@@ -219,82 +222,82 @@ a {
 
 @media only screen and (max-width: 1090px) {
   :root {
-      --tamanho-nome: 2rem;
-      --tamanho-normal: 1.1rem;
+    --tamanho-nome: 2rem;
+    --tamanho-normal: 1.1rem;
   }
 }
 
 @media only screen and (max-width: 900px) {
   :root {
-      --tamanho-nome: 2rem;
-      --tamanho-normal: 1rem;
+    --tamanho-nome: 2rem;
+    --tamanho-normal: 1rem;
   }
 
   .principal__cabecalho__buttons {
-      display: none;
+    display: none;
   }
 
   #menu-btn {
-      display: block;
+    display: block;
   }
 
   .signInButton {
-      display: none;
+    display: none;
   }
 
   .autentication,
   a {
-      text-decoration: none;
-      align-items: center;
-      font-size: 1.4rem;
-      padding: 1%;
+    text-decoration: none;
+    align-items: center;
+    font-size: 1.4rem;
+    padding: 1%;
   }
 
   .ourServices__services {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .ourServices__service {
-      width: 90%;
-      margin-bottom: 20px;
+    width: 90%;
+    margin-bottom: 20px;
   }
 
   .moreAboutOurBrand__image {
-      min-height: 400px;
+    min-height: 400px;
   }
 
   .imagem__header {
-      min-height: 600px;
+    min-height: 600px;
   }
 }
 
 @media only screen and (max-width: 679px) {
   :root {
-      --tamanho-nome: 1.7rem;
-      --tamanho-normal: 0.9rem;
+    --tamanho-nome: 1.7rem;
+    --tamanho-normal: 0.9rem;
   }
 
   .indicePresentation {
-      width: auto;
+    width: auto;
   }
 
   .moreAboutOurBrand__text {
-      width: 90%;
+    width: 90%;
   }
 }
 
 @media only screen and (max-width: 410px) {
   .indicePresentation {
-      min-height: 250px;
+    min-height: 250px;
   }
 
   .autentication {
-      padding-left: 5%;
-      padding-right: 25%;
+    padding-left: 5%;
+    padding-right: 25%;
   }
 
   #menu-btn {
-      margin-right: 13%;
+    margin-right: 13%;
   }
 }
