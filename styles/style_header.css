@@ -39,7 +39,6 @@
   padding: 0;
   background-repeat: no-repeat;
   user-select: none;
-  /* para fazer com que o usuário não possa selecionar o texto*/
   background-size: cover;
   background-position: top;
 }
@@ -147,11 +146,8 @@ a {
   list-style: none;
   margin-top: 5rem;
   display: flex;
-  /* Adiciona display flex */
   flex-direction: column;
-  /* Organiza os itens em uma coluna */
   align-items: center;
-  /* Centraliza os itens na vertical */
 }
 
 .menu ul li {
@@ -203,7 +199,6 @@ a {
   width: 0;
   height: 2px;
   background-color: var(--cor-terciaria);
-  /*Mudar aq para mudar a cor da linha que aparece no hover dos elementos do menu. */
   transition: all 0.3s;
 }
 

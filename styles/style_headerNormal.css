@@ -252,16 +252,12 @@ a {
 
   .ourServices__services {
       flex-direction: column;
-      /* Altera o layout para coluna */
       align-items: center;
-      /* Centraliza os serviços na coluna */
   }
 
   .ourServices__service {
       width: 90%;
-      /* Define a largura dos serviços para 90% da largura da tela */
       margin-bottom: 20px;
-      /* Adiciona margem inferior para separar os serviços */
   }
 
   .moreAboutOurBrand__image {

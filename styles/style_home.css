@@ -78,7 +78,6 @@
     padding: 0;
     background-repeat: no-repeat;
     user-select: none;
-    /* para fazer com que o usuário não possa selecionar o texto*/
     background-size: cover;
     background-position: top;
 }
@@ -190,17 +189,6 @@
     }
 }
 
-/* .ourServices__service {
-    opacity: 0;
-    z-index: 0;
-    transition: opacity 0.5s ease;
-}
-
-.ourServices__service.visible {
-    opacity: 1;
-} */
-
-
 @media only screen and (max-width: 1090px) {
     :root {
         --tamanho-nome: 2rem;
@@ -236,16 +224,12 @@
 
     .ourServices__services {
         flex-direction: column;
-        /* Altera o layout para coluna */
         align-items: center;
-        /* Centraliza os serviços na coluna */
     }
 
     .ourServices__service {
         width: 90%;
-        /* Define a largura dos serviços para 90% da largura da tela */
         margin-bottom: 20px;
-        /* Adiciona margem inferior para separar os serviços */
     }
 
     .moreAboutOurBrand__image {
