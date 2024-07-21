@@ -30,11 +30,7 @@
 
 }
 
-header {
-  width: 100vw;
-}
-
-.imagem__header {
+z .imagem__header {
   display: flex;
   margin: 0;
   padding: 0;
@@ -294,7 +290,7 @@ a {
 
   .autentication {
     padding-left: 5%;
-    padding-right: 25%;
+    /* padding-right: 25%; */
   }
 
   #menu-btn {
