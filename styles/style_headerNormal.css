@@ -30,7 +30,7 @@
 
 }
 
-z .imagem__header {
+ .imagem__header {
   display: flex;
   margin: 0;
   padding: 0;
@@ -280,6 +280,9 @@ a {
 
   .moreAboutOurBrand__text {
     width: 90%;
+  }
+  #menu-btn{
+    margin-right: 2%;
   }
 }
 

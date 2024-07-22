@@ -72,6 +72,8 @@
 
 .softwareName a {
   font-weight: var(--weight-bold);
+  margin-left: -19%;
+  width: fit-content;
   font-size: var(--tamanho-nome);
   font-family: var(--font-nome);
 }

@@ -24,10 +24,6 @@
 }
 
 
-* {
-    background-color: #c6c6c6;
-}
-
 html,
 body {
     overflow-x: hidden;
@@ -46,11 +42,12 @@ header,
     box-sizing: border-box;
 }
 
-main {
+header,
+main {    
+    background-color: #c6c6c6;
     display: flex;
     align-items: center;
     flex-direction: column;
-
 
 }
 
@@ -74,6 +71,7 @@ h1 {
     font-size: var(--tamanho-normal);
     font-family: var(--font-primaria);
     text-indent: 60px;
+    font-size: 1.7rem;
 }
 
 .mainText {
@@ -86,7 +84,7 @@ form {
     margin-top: 5%;
 }
 
-img {
+.imgContact {
     width: 40%;
     height: auto;
     border-radius: 30% 53% 39% 51% / 23% 44% 33% 61%;
@@ -138,4 +136,55 @@ button:hover {
     display: block;
     margin-bottom: 8px;
     margin-left: 5%;
+}
+
+
+
+
+
+/* Responsividade */
+
+@media only screen and (max-width: 1090px) {
+    :root {
+        --tamanho-nome: 2rem;
+        --tamanho-normal: 1.1rem;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    :root {
+        --tamanho-nome: 2rem;
+        --tamanho-normal: 1rem;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 679px) {
+    :root {
+        --tamanho-nome: 1.7rem;
+        --tamanho-normal: 0.9rem;
+    }
+
+    .mainText {
+        width: auto;
+    }
+
+    .principal {
+        flex-direction: column;
+    }
+
+    button,
+    .formulario input,
+    .formulario textarea {
+        width: 90%;
+    }
+
+    .imgContact {
+        display: none;
+    }
+
+
 }

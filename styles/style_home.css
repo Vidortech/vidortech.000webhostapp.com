@@ -1,3 +1,18 @@
+
+
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.main, .principal, .formulario, header, .menu, .principal__cabecalho__buttons, .softwareName, .autentication {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
 .indicePresentation {
     display: flex;
     text-align: center;
@@ -208,6 +223,7 @@
 
     #menu-btn {
         display: block;
+        margin-right: 19%;
     }
 
     .signInButton {
