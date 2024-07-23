@@ -270,6 +270,11 @@ html, body {
     .moreAboutOurBrand__text {
         width: 90%;
     }
+    .softwareName{
+        margin-left: 6%;
+        width: fit-content;
+        margin-right: -10%;
+    }
 }
 
 @media only screen and (max-width: 410px) {
