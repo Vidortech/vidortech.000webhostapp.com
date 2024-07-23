@@ -30,7 +30,7 @@
 
 }
 
- .imagem__header {
+.imagem__header {
   display: flex;
   margin: 0;
   padding: 0;
@@ -54,6 +54,7 @@
   font-family: var(--font-primaria);
   font-size: var(--tamanho-normal);
   display: flex;
+  margin-right: -5%;
 }
 
 .principal__cabecalho__buttons__elementUL {
@@ -71,6 +72,8 @@
   font-weight: var(--weight-bold);
   font-size: var(--tamanho-nome);
   font-family: var(--font-nome);
+  width: fit-content;
+  
 }
 
 
@@ -235,6 +238,7 @@ a {
 
   #menu-btn {
     display: block;
+    
   }
 
   .signInButton {
@@ -249,23 +253,7 @@ a {
     padding: 1%;
   }
 
-  .ourServices__services {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .ourServices__service {
-    width: 90%;
-    margin-bottom: 20px;
-  }
-
-  .moreAboutOurBrand__image {
-    min-height: 400px;
-  }
-
-  .imagem__header {
-    min-height: 600px;
-  }
+ 
 }
 
 @media only screen and (max-width: 679px) {
@@ -281,8 +269,9 @@ a {
   .moreAboutOurBrand__text {
     width: 90%;
   }
-  #menu-btn{
-    margin-right: 2%;
+
+  #menu-btn {
+    margin-right: 2;
   }
 }
 
@@ -297,6 +286,6 @@ a {
   }
 
   #menu-btn {
-    margin-right: 13%;
+    margin-right: 4%;
   }
 }
