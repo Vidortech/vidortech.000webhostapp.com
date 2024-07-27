@@ -1,11 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/styles/style_loja.css">
+    <link rel="stylesheet" href="/styles/style_headerNormal.css">
+    <title>Vidortech | Loja</title>
 </head>
+
 <body>
-    
+    <header class="principal__cabecalho" id="principal__cabecalho">
+        <img src="/assets/bars-solid (1).svg" id="menu-btn" class="menu-btn btnOne"
+            alt="Clique para abrir ou fechar o menu.">
+        <div class="menu">
+            <ul class="principal__cabecalho__buttons__elementUL" id="principal__cabecalho__buttons__elementUL">
+                <a href="/" class="menuDeNav__element">
+                    <li class="principal__cabecalho__buttons__elementUL__buttonLI" s
+                        id="principal__cabecalho__buttons__elementUL__buttonLI">Início</li>
+                </a>
+                <a href="/about" class="menuDeNav__element">
+                    <li class="principal__cabecalho__buttons__elementUL__buttonLI"
+                        id="principal__cabecalho__buttons__elementUL__buttonLI">Sobre</li>
+                </a>
+                <a href="/contact" class="menuDeNav__element">
+                    <li class="principal__cabecalho__buttons__elementUL__buttonLI"
+                        id="principal__cabecalho__buttons__elementUL__buttonLI">Contato</li>
+                </a>
+                <a href="/services">
+                    <li class="principal__cabecalho__buttons__elementUL__buttonLI"
+                        id="principal__cabecalho__buttons__elementUL__buttonLI">Serviços</li>
+                </a>
+            </ul>
+        </div>
+        <div class="principal__cabecalho__buttons" id="principal__cabecalho__buttons">
+            <ul class="principal__cabecalho__buttons__elementUL" id="principal__cabecalho__buttons__elementUL">
+                <a href="/">
+                    <li class="principal__cabecalho__buttons__elementUL__buttonLI"
+                        id="principal__cabecalho__buttons__elementUL__buttonLI">Início</li>
+                </a>
+                <a href="/about">
+                    <li class="principal__cabecalho__buttons__elementUL__buttonLI"
+                        id="principal__cabecalho__buttons__elementUL__buttonLI">Sobre</li>
+                </a>
+                <a href="/contact">
+                    <li class="principal__cabecalho__buttons__elementUL__buttonLI"
+                        id="principal__cabecalho__buttons__elementUL__buttonLI">Contato</li>
+                </a>
+                <a href="/services">
+                    <li class="principal__cabecalho__buttons__elementUL__buttonLI"
+                        id="principal__cabecalho__buttons__elementUL__buttonLI">Serviços</li>
+                </a>
+                
+            </ul>
+        </div>
+        <div class="softwareName">
+            <a href="/" class="softwareName__element" id="softwareName__element">VIDORTECH</a>
+        </div>
+        <div class="autentication">
+            <a href="https://www.instagram.com/vidortech/" target="_blank" rel="noopener noreferrer"><i
+                    class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+    </header>
+    <main class="principal" id="principal">
+        <section class="products" id="products">
+            <div class="product">
+                <img src="/loja/assets/Ebook sobre Negócios - Capa com Páginas .png" alt="batata">
+                <div class="product__title">Dominando o Tráfego Pago: Guia Completo de Gestão e Otimizações</div>
+                <!-- Máximo 195 caracteres -->
+                <p class="product__description" id="productDescription">O tráfego pago é uma das formas mais eficazes de
+                    aumentar rapidamente
+                    avisibilidade da sua marca, gerar leads qualificados e, consequentemente, impulsionar suas vendas.
+                </p>
+
+                <stripe-buy-button buy-button-id="buy_btn_1Pgz1nHS7rqaAsCpErEGjyBu"
+                    publishable-key="pk_live_51PgAk7HS7rqaAsCpO1mUcyRDcboOE52OYx9hJ5R3NY7ivUmcLwLqojc4YcC9VkMAPw6ql4c3OQ4ULBAokTQBPyae001tmJlvlt">
+                </stripe-buy-button>
+            </div>
+            
+
+        </section>
+    </main>
 </body>
+<script src="https://kit.fontawesome.com/6d2133063a.js" crossorigin="anonymous"></script>
+<script async src="https://js.stripe.com/v3/buy-button.js"></script>
+<script src="/loja/js/main.js"></script>
+<script src="/main/main.js"></script>
+
 </html>
