@@ -1,135 +1,899 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/style_header.css">
-    <meta name="google-site-verification" content="TFEgozLq7GyDfCTsNIGb8NhrNe3wjjjXkpvKtXyicfc" />
-    <link rel="stylesheet" href="/styles/style_home.css">
-    <link rel="icon" href="/assets/Blue Flat Illustrative Finance Company Logo (1).png" type="image/png">
-
-    <title>VidorTech</title>
+    <title>Matheus | Engenheiro de Software</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cyber-black': '#0a0a0a',
+                        'cyber-dark': '#121212',
+                        'cyber-gray': '#1e1e1e',
+                        'cyber-green': '#00ff00',
+                        'cyber-blue': '#00ffff',
+                        'cyber-purple': '#9900ff',
+                    },
+                    fontFamily: {
+                        'cyber': ['Consolas', 'Monaco', 'Courier New', 'monospace'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                    },
+                    keyframes: {
+                        glow: {
+                            '0%': { textShadow: '0 0 5px #00ff00, 0 0 10px #00ff00' },
+                            '100%': { textShadow: '0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-
+        @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+        
+        body {
+            font-family: 'Share Tech Mono', monospace;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        
+        .cyber-border {
+            position: relative;
+            border: 1px solid #00ff00;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+        }
+        
+        .cyber-border::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            border: 1px solid #00ffff;
+            z-index: -1;
+        }
+        
+        .cyber-text {
+            color: #00ff00;
+            text-shadow: 0 0 5px rgba(0, 255, 0, 0.7);
+        }
+        
+        .cyber-gradient {
+            background: linear-gradient(135deg, #121212 0%, #1e1e1e 100%);
+        }
+        
+        .cyber-button {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .cyber-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 255, 0, 0.2), transparent);
+            transition: all 0.5s ease;
+        }
+        
+        .cyber-button:hover::before {
+            left: 100%;
+        }
+        
+        .glitch {
+            position: relative;
+        }
+        
+        .glitch::before, .glitch::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .glitch::before {
+            left: 2px;
+            text-shadow: -1px 0 #00ffff;
+            clip: rect(44px, 450px, 56px, 0);
+            animation: glitch-anim 5s infinite linear alternate-reverse;
+        }
+        
+        .glitch::after {
+            left: -2px;
+            text-shadow: -1px 0 #ff00ff;
+            clip: rect(44px, 450px, 56px, 0);
+            animation: glitch-anim2 5s infinite linear alternate-reverse;
+        }
+        
+        @keyframes glitch-anim {
+            0% { clip: rect(31px, 9999px, 94px, 0); }
+            10% { clip: rect(112px, 9999px, 76px, 0); }
+            20% { clip: rect(85px, 9999px, 77px, 0); }
+            30% { clip: rect(27px, 9999px, 97px, 0); }
+            40% { clip: rect(64px, 9999px, 98px, 0); }
+            50% { clip: rect(61px, 9999px, 85px, 0); }
+            60% { clip: rect(99px, 9999px, 114px, 0); }
+            70% { clip: rect(34px, 9999px, 115px, 0); }
+            80% { clip: rect(98px, 9999px, 129px, 0); }
+            90% { clip: rect(43px, 9999px, 96px, 0); }
+            100% { clip: rect(82px, 9999px, 64px, 0); }
+        }
+        
+        @keyframes glitch-anim2 {
+            0% { clip: rect(125px, 9999px, 162px, 0); }
+            10% { clip: rect(120px, 9999px, 147px, 0); }
+            20% { clip: rect(113px, 9999px, 171px, 0); }
+            30% { clip: rect(142px, 9999px, 116px, 0); }
+            40% { clip: rect(121px, 9999px, 167px, 0); }
+            50% { clip: rect(131px, 9999px, 162px, 0); }
+            60% { clip: rect(111px, 9999px, 149px, 0); }
+            70% { clip: rect(133px, 9999px, 150px, 0); }
+            80% { clip: rect(121px, 9999px, 151px, 0); }
+            90% { clip: rect(146px, 9999px, 156px, 0); }
+            100% { clip: rect(144px, 9999px, 132px, 0); }
+        }
+        
+        .terminal-text {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .terminal-text::after {
+            content: '|';
+            position: absolute;
+            right: -10px;
+            animation: blink 1s step-end infinite;
+        }
+        
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        
+        .progress-bar {
+            height: 8px;
+            background: rgba(0, 255, 0, 0.2);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00ff00, #00ffff);
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+        
+        .matrix-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.05;
+        }
+        
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #121212;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #00ff00;
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #00ffff;
+        }
+        
+        /* Typing effect */
+        .typing-effect {
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 0 auto;
+            animation: typing 3.5s steps(40, end);
+        }
+        
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
     </style>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QD3JYNR1QS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-QD3JYNR1QS');
-</script>
-
-<body class="principal" id="principal">
-    <div class="imagem__header">
-        <header class="principal__cabecalho" id="principal__cabecalho">
-            <img src="/assets/bars-solid (1).svg" id="menu-btn" class="menu-btn btnOne"
-                alt="Clique para abrir ou fechar o menu.">
-            <div class="menu">
-                <ul class="principal__cabecalho__buttons__elementUL" id="principal__cabecalho__buttons__elementUL">
-                    <a href="/services" class="menuDeNav__element">
-                        <li class="principal__cabecalho__buttons__elementUL__buttonLI"
-                            id="principal__cabecalho__buttons__elementUL__buttonLI">Serviços</li>
-                    </a>
-                    <a href="/about" class="menuDeNav__element">
-                        <li class="principal__cabecalho__buttons__elementUL__buttonLI"
-                            id="principal__cabecalho__buttons__elementUL__buttonLI">Sobre</li>
-                    </a>
-                    <a href="/contact" class="menuDeNav__element">
-                        <li class="principal__cabecalho__buttons__elementUL__buttonLI"
-                            id="principal__cabecalho__buttons__elementUL__buttonLI">Contato</li>
-                    </a>
-                    <a href="/loja" class="menuDeNav__element">
-                        <li class="principal__cabecalho__buttons__elementUL__buttonLI"
-                            id="principal__cabecalho__buttons__elementUL__buttonLI">Loja</li>
-                    </a>
-                </ul>
-            </div>
-            <div class="principal__cabecalho__buttons" id="principal__cabecalho__buttons">
-                <ul class="principal__cabecalho__buttons__elementUL" id="principal__cabecalho__buttons__elementUL">
-                    <a href="/services">
-                        <li class="principal__cabecalho__buttons__elementUL__buttonLI"
-                            id="principal__cabecalho__buttons__elementUL__buttonLI">Serviços</li>
-                    </a>
-                    <a href="/about">
-                        <li class="principal__cabecalho__buttons__elementUL__buttonLI"
-                            id="principal__cabecalho__buttons__elementUL__buttonLI">Sobre</li>
-                    </a>
-                    <a href="/contact">
-                        <li class="principal__cabecalho__buttons__elementUL__buttonLI"
-                            id="principal__cabecalho__buttons__elementUL__buttonLI">Contato</li>
-                    </a>
-                    <a href="/loja">
-                        <li class="principal__cabecalho__buttons__elementUL__buttonLI"
-                            id="principal__cabecalho__buttons__elementUL__buttonLI">Loja</li>
-                    </a>
-                </ul>
-            </div>
-            <div class="softwareName">
-                <a href="/" class="softwareName__element" id="softwareName__element">VIDORTECH</a>
-            </div>
-            <div class="autentication">
-                <a href="https://www.instagram.com/vidortech/" target="_blank" rel="noopener noreferrer"><i
-                        class="fa fa-instagram" aria-hidden="true"></i></a>
-            </div>
-        </header>
-    </div>
-    <div class="indicePresentation">
-        <p class="indicePresentation__text">
-            Vidortech: Transformando visões em códigos que definem o futuro da tecnologia.
-        </p>
-    </div>
-
-
-    <main>
-        <section class="ourServices">
-            <h1 class="ourServices__title">Nossos Serviços</h1>
-            <div class="ourServices__services">
-
-                <div class="ourServices__service" id="serviceOne">
-                    <h2 class="serviceName">Loja Virtual</h2>
-                    <p class="serviceDescription"> Desenvolvemos lojas virtuais personalizadas com design atrativo e
-                        segurança robusta para uma experiência de compra online eficiente.</p>
-                </div>
-                <div class="ourServices__service" id="serviceTwo">
-                    <h2 class="serviceName">Landing Page</h2>
-                    <p class="serviceDescription">Criamos landing pages otimizadas para conversão, focadas em capturar a
-                        atenção dos visitantes e levá-los a realizar ações específicas.</p>
-                </div>
-                <div class="ourServices__service" id="serviceThree">
-                    <h2 class="serviceName">Blog</h2>
-                    <p class="serviceDescription">Desenvolvemos blogs fáceis de usar e SEO-friendly para compartilhar
-                        conteúdo relevante e aumentar a visibilidade da sua marca.</p>
-                </div>
-                <div class="ourServices__service" id="serviceFour">
-                    <h2 class="serviceName">Portfólio</h2>
-                    <p class="serviceDescription">Criamos portfólios online visualmente impressionantes para destacar
-                        suas habilidades e experiências de forma profissional.</p>
+<body class="min-h-screen">
+    <!-- Matrix background animation -->
+    <canvas id="matrix" class="matrix-bg"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-cyber-black bg-opacity-90 z-50 border-b border-cyber-green">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#home" class="text-xl font-bold cyber-text">MATHEUS<span class="text-white">.SYS</span></a>
+                
+                <!-- Mobile menu button -->
+                <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+                    <i class="fas fa-bars text-cyber-green"></i>
+                </button>
+                
+                <!-- Desktop menu -->
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="text-white hover:text-cyber-green transition-colors duration-300">&lt;Home/&gt;</a>
+                    <a href="#about" class="text-white hover:text-cyber-green transition-colors duration-300">&lt;Sobre/&gt;</a>
+                    <a href="#skills" class="text-white hover:text-cyber-green transition-colors duration-300">&lt;Habilidades/&gt;</a>
+                    <a href="#projects" class="text-white hover:text-cyber-green transition-colors duration-300">&lt;Projetos/&gt;</a>
+                    <a href="#contact" class="text-white hover:text-cyber-green transition-colors duration-300">&lt;Contato/&gt;</a>
                 </div>
             </div>
-        </section>
-        <section class="moreAboutOurBrand">
-            <div class="moreAboutOurBrand__image">
+            
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="md:hidden hidden mt-3 pb-2">
+                <div class="flex flex-col space-y-3">
+                    <a href="#home" class="text-white hover:text-cyber-green transition-colors duration-300">&lt;Home/&gt;</a>
+                    <a href="#about" class="text-white hover:text-cyber-green transition-colors duration-300">&lt;Sobre/&gt;</a>
+                    <a href="#skills" class="text-white hover:text-cyber-green transition-colors duration-300">&lt;Habilidades/&gt;</a>
+                    <a href="#projects" class="text-white hover:text-cyber-green transition-colors duration-300">&lt;Projetos/&gt;</a>
+                    <a href="#contact" class="text-white hover:text-cyber-green transition-colors duration-300">&lt;Contato/&gt;</a>
+                </div>
             </div>
-            <div class="moreAboutOurBrand__text">
-                <p class="moreAboutOurBrand__text__title">Mais sobre a Vidortech</p>
-                <p class="moreAboutOurBrand__text__text">Somos uma equipe apaixonada por tecnologia, pronta para
-                    embarcar em desafios e transformar ideias em soluções digitais incríveis. Junte-se a nós nessa
-                    jornada de inovação e descoberta tecnológica!</p>
-                <a href="/contact" class="moreAboutOurBrand__button">SAIBA MAIS</a>
+        </div>
+    </nav>
+    
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-16 relative overflow-hidden">
+        <div class="container mx-auto px-4 py-16 flex flex-col items-center justify-center text-center">
+            <div class="cyber-border p-8 md:p-12 cyber-gradient rounded-lg max-w-3xl mx-auto">
+                <div class="mb-8">
+                    <svg class="w-32 h-32 mx-auto mb-6" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="100" cy="100" r="90" fill="#121212" stroke="#00ff00" stroke-width="2" />
+                        <path d="M65,80 L135,80 L135,140 L65,140 Z" fill="none" stroke="#00ffff" stroke-width="2" />
+                        <circle cx="100" cy="70" r="20" fill="none" stroke="#00ff00" stroke-width="2" />
+                        <path d="M85,110 L115,110 M85,120 L115,120 M85,130 L115,130" stroke="#00ffff" stroke-width="2" />
+                        <path d="M70,85 L70,135 M130,85 L130,135" stroke="#9900ff" stroke-width="2" />
+                        <path d="M60,70 L50,60 M140,70 L150,60" stroke="#00ff00" stroke-width="2" />
+                    </svg>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                        <span class="glitch cyber-text" data-text="MATHEUS">MATHEUS</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-6 typing-effect">
+                        <span class="terminal-text">Hackeando a realidade, uma linha de código por vez</span>
+                    </p>
+                </div>
+                
+                <a href="#projects" class="inline-block cyber-button bg-cyber-gray border border-cyber-green text-cyber-green px-8 py-3 rounded-md hover:bg-cyber-green hover:text-cyber-black transition-all duration-300 font-bold">
+                    <i class="fas fa-code mr-2"></i> Ver Projetos
+                </a>
             </div>
-        </section>
-    </main>
+            
+            <div class="absolute bottom-10 left-0 right-0 text-center">
+                <a href="#about" class="text-cyber-green animate-bounce inline-block">
+                    <i class="fas fa-chevron-down text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-cyber-dark relative">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+                <span class="cyber-text">&lt;</span> Sobre Mim <span class="cyber-text">/&gt;</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="cyber-border p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4 cyber-text">Matheus</h3>
+                    <p class="mb-4">Engenheiro de Software autodidata, com mais de 7 anos de prática intensiva e resultados comprovados.</p>
+                    
+                    <div class="mb-4 cyber-border p-4 rounded-lg bg-cyber-black bg-opacity-50">
+                        <p class="text-cyber-green mb-2"><i class="fas fa-brain mr-2"></i> <strong>Perfil Neurológico:</strong></p>
+                        <p>Autista com TEA e AH/SD (Altas Habilidades/Superdotação)</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <p class="mb-2"><i class="fas fa-graduation-cap text-cyber-green mr-2"></i> <strong>Formação:</strong></p>
+                        <p>Aprendeu tudo sozinho, sem cursos formais. Conhecimento adquirido através de prática intensiva e autodidatismo.</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <p class="mb-2"><i class="fas fa-user-cog text-cyber-green mr-2"></i> <strong>Estilo de Trabalho:</strong></p>
+                        <p>Direto, analítico e prático. Sociopata funcional com foco em performance e resultado.</p>
+                    </div>
+                    
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#skills" class="cyber-button bg-transparent border border-cyber-green text-cyber-green px-4 py-2 rounded-md hover:bg-cyber-green hover:text-cyber-black transition-all duration-300">
+                            <i class="fas fa-code mr-2"></i> Habilidades
+                        </a>
+                        <a href="#projects" class="cyber-button bg-transparent border border-cyber-blue text-cyber-blue px-4 py-2 rounded-md hover:bg-cyber-blue hover:text-cyber-black transition-all duration-300">
+                            <i class="fas fa-project-diagram mr-2"></i> Projetos
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="cyber-border p-6 rounded-lg bg-cyber-black">
+                    <div class="terminal-window">
+                        <div class="terminal-header bg-cyber-gray p-2 rounded-t-lg flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-red-500 mr-2"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500 mr-2"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500 mr-2"></div>
+                            <div class="flex-1 text-center text-xs">terminal@matheus:~</div>
+                        </div>
+                        <div class="terminal-body p-4 font-mono text-sm">
+                            <p class="mb-2"><span class="text-cyber-green">$</span> whoami</p>
+                            <p class="mb-3 text-cyber-blue">matheus@system</p>
+                            
+                            <p class="mb-2"><span class="text-cyber-green">$</span> cat about.txt</p>
+                            <p class="mb-3">Engenheiro de software especializado em segurança e sistemas complexos. Autodidata com foco em resultados e eficiência.</p>
+                            
+                            <p class="mb-2"><span class="text-cyber-green">$</span> ls -la skills/</p>
+                            <p class="mb-1">drwxr-xr-x  2 matheus users 4096 Jul 15 21:34 <span class="text-cyber-blue">programming/</span></p>
+                            <p class="mb-1">drwxr-xr-x  2 matheus users 4096 Jul 15 21:34 <span class="text-cyber-blue">security/</span></p>
+                            <p class="mb-3">drwxr-xr-x  2 matheus users 4096 Jul 15 21:34 <span class="text-cyber-blue">systems/</span></p>
+                            
+                            <p class="mb-2"><span class="text-cyber-green">$</span> ./run_diagnostics.sh</p>
+                            <p class="mb-1">Analyzing profile... <span class="text-cyber-green">COMPLETE</span></p>
+                            <p class="mb-1">Checking capabilities... <span class="text-cyber-green">ADVANCED</span></p>
+                            <p class="mb-3">System status: <span class="text-cyber-green">OPERATIONAL</span></p>
+                            
+                            <p><span class="text-cyber-green">$</span> <span class="terminal-cursor">_</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-cyber-black relative">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+                <span class="cyber-text">&lt;</span> Habilidades Técnicas <span class="cyber-text">/&gt;</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Programming Languages -->
+                <div class="cyber-border p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-code text-cyber-green mr-3"></i>
+                        <span>Linguagens de Programação</span>
+                    </h3>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Python</span>
+                                <span class="text-cyber-green">95%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>PHP</span>
+                                <span class="text-cyber-green">90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Java</span>
+                                <span class="text-cyber-green">85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>JavaScript</span>
+                                <span class="text-cyber-green">80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>FORTRAN</span>
+                                <span class="text-cyber-green">75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>COBOL</span>
+                                <span class="text-cyber-green">70%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Security & Tools -->
+                <div class="cyber-border p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-shield-alt text-cyber-green mr-3"></i>
+                        <span>Segurança & Ferramentas</span>
+                    </h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="cyber-border p-3 rounded-lg bg-cyber-gray bg-opacity-30">
+                            <h4 class="text-cyber-blue mb-2">OSINT</h4>
+                            <p class="text-sm">Coleta e análise avançada de informações de fontes abertas</p>
+                        </div>
+                        
+                        <div class="cyber-border p-3 rounded-lg bg-cyber-gray bg-opacity-30">
+                            <h4 class="text-cyber-blue mb-2">Pentest</h4>
+                            <p class="text-sm">Testes de penetração e avaliação de vulnerabilidades</p>
+                        </div>
+                        
+                        <div class="cyber-border p-3 rounded-lg bg-cyber-gray bg-opacity-30">
+                            <h4 class="text-cyber-blue mb-2">Análise Forense</h4>
+                            <p class="text-sm">Investigação digital e recuperação de dados</p>
+                        </div>
+                        
+                        <div class="cyber-border p-3 rounded-lg bg-cyber-gray bg-opacity-30">
+                            <h4 class="text-cyber-blue mb-2">Web Scraping</h4>
+                            <p class="text-sm">Extração automatizada de dados da web</p>
+                        </div>
+                        
+                        <div class="cyber-border p-3 rounded-lg bg-cyber-gray bg-opacity-30">
+                            <h4 class="text-cyber-blue mb-2">Automação</h4>
+                            <p class="text-sm">Criação de sistemas automatizados e bots</p>
+                        </div>
+                        
+                        <div class="cyber-border p-3 rounded-lg bg-cyber-gray bg-opacity-30">
+                            <h4 class="text-cyber-blue mb-2">Backend</h4>
+                            <p class="text-sm">Desenvolvimento de sistemas robustos e escaláveis</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Systems Development -->
+                <div class="cyber-border p-6 rounded-lg col-span-1 md:col-span-2">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-cogs text-cyber-green mr-3"></i>
+                        <span>Desenvolvimento de Sistemas</span>
+                    </h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="cyber-border p-4 rounded-lg bg-cyber-gray bg-opacity-20 hover:bg-opacity-30 transition-all duration-300">
+                            <div class="text-cyber-green text-3xl mb-3">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4 class="text-lg font-bold mb-2">CRMs & Sistemas Empresariais</h4>
+                            <p>Desenvolvimento de sistemas de gestão personalizados e eficientes para empresas de diversos setores.</p>
+                        </div>
+                        
+                        <div class="cyber-border p-4 rounded-lg bg-cyber-gray bg-opacity-20 hover:bg-opacity-30 transition-all duration-300">
+                            <div class="text-cyber-green text-3xl mb-3">
+                                <i class="fas fa-search-location"></i>
+                            </div>
+                            <h4 class="text-lg font-bold mb-2">Sistemas de Rastreamento</h4>
+                            <p>Criação de ferramentas avançadas para rastreamento de pessoas, dispositivos e dados em tempo real.</p>
+                        </div>
+                        
+                        <div class="cyber-border p-4 rounded-lg bg-cyber-gray bg-opacity-20 hover:bg-opacity-30 transition-all duration-300">
+                            <div class="text-cyber-green text-3xl mb-3">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h4 class="text-lg font-bold mb-2">Monitoramento & Vigilância</h4>
+                            <p>Desenvolvimento de sistemas de monitoramento com análise de dados e alertas em tempo real.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-cyber-dark relative">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+                <span class="cyber-text">&lt;</span> Projetos <span class="cyber-text">/&gt;</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="cyber-border p-6 rounded-lg bg-cyber-black hover:shadow-lg hover:shadow-cyber-green/20 transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-cyber-gray flex items-center justify-center mr-4">
+                            <i class="fas fa-search text-cyber-green text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold cyber-text">Maxus OSINT</h3>
+                    </div>
+                    
+                    <p class="mb-4">Plataforma avançada de rastreamento de pessoas por nome, rosto, CPF e número de telefone. Integra múltiplas fontes de dados para análise completa.</p>
+                    
+                    <div class="mb-4 flex flex-wrap gap-2">
+                        <span class="bg-cyber-gray px-2 py-1 rounded-md text-xs">Python</span>
+                        <span class="bg-cyber-gray px-2 py-1 rounded-md text-xs">OSINT</span>
+                        <span class="bg-cyber-gray px-2 py-1 rounded-md text-xs">API</span>
+                        <span class="bg-cyber-gray px-2 py-1 rounded-md text-xs">Facial Recognition</span>
+                    </div>
+                    
+                    <div class="cyber-border p-3 rounded-lg bg-cyber-gray bg-opacity-20">
+                        <h4 class="text-sm font-bold mb-1 text-cyber-blue">Recursos principais:</h4>
+                        <ul class="text-sm list-disc list-inside space-y-1">
+                            <li>Reconhecimento facial avançado</li>
+                            <li>Busca por CPF e dados cadastrais</li>
+                            <li>Rastreamento de números telefônicos</li>
+                            <li>Análise de redes sociais</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="cyber-border p-6 rounded-lg bg-cyber-black hover:shadow-lg hover:shadow-cyber-green/20 transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-cyber-gray flex items-center justify-center mr-4">
+                            <i class="fas fa-gamepad text-cyber-green text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold cyber-text">Fortune Tiger Clone</h3>
+                    </div>
+                    
+                    <p class="mb-4">Recriação completa do popular jogo caça-níquel Fortune Tiger para navegador, com física e mecânicas realistas.</p>
+                    
+                    <div class="mb-4 flex flex-wrap gap-2">
+                        <span class="bg-cyber-gray px-2 py-1 rounded-md text-xs">JavaScript</span>
+                        <span class="bg-cyber-gray px-2 py-1 rounded-md text-xs">HTML5</span>
+                        <span class="bg-cyber-gray px-2 py-1 rounded-md text-xs">Canvas</span>
+                        <span class="bg-cyber-gray px-2 py-1 rounded-md text-xs">WebGL</span>
+                    </div>
+                    
+                    <div class="cyber-border p-3 rounded-lg bg-cyber-gray bg-opacity-20">
+                        <h4 class="text-sm font-bold mb-1 text-cyber-blue">Recursos principais:</h4>
+                        <ul class="text-sm list-disc list-inside space-y-1">
+                            <li>Animações e gráficos idênticos ao original</li>
+                            <li>Sistema de probabilidade configurável</li>
+                            <li>Compatível com dispositivos móveis</li>
+                            <li>Integração com sistemas de pagamento</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="cyber-border p-6 rounded-lg bg-cyber-black hover:shadow-lg hover:shadow-cyber-green/20 transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-cyber-gray flex items-center justify-center mr-4">
+                            <i class="fas fa-balance-scale text-cyber-green text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold cyber-text">CRM SIDI</h3>
+                    </div>
+                    
+                    <p class="mb-4">Sistema jurídico leve e acessível para escritórios de advocacia e departamentos legais, com foco em usabilidade e eficiência.</p>
+                    
+                    <div class="mb-4 flex flex-wrap gap-2">
+                        <span class="bg-cyber-gray px-2 py-1 rounded-md text-xs">PHP</span>
+                        <span class="bg-cyber-gray px-2 py-1 rounded-md text-xs">MySQL</span>
+                        <span class="bg-cyber-gray px-2 py-1 rounded-md text-xs">JavaScript</span>
+                        <span class="bg-cyber-gray px-2 py-1 rounded-md text-xs">REST API</span>
+                    </div>
+                    
+                    <div class="cyber-border p-3 rounded-lg bg-cyber-gray bg-opacity-20">
+                        <h4 class="text-sm font-bold mb-1 text-cyber-blue">Recursos principais:</h4>
+                        <ul class="text-sm list-disc list-inside space-y-1">
+                            <li>Gestão de processos e prazos</li>
+                            <li>Controle financeiro integrado</li>
+                            <li>Geração automática de documentos</li>
+                            <li>Painel de análise e relatórios</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="cyber-border p-6 rounded-lg bg-cyber-black hover:shadow-lg hover:shadow-cyber-green/20 transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-cyber-gray flex items-center justify-center mr-4">
+                            <i class="fas fa-bug text-cyber-green text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold cyber-text">Sistema de Pentest Factual</h3>
+                    </div>
+                    
+                    <p class="mb-4">Ferramenta de testes de segurança personalizados que automatiza a detecção de vulnerabilidades e gera relatórios detalhados.</p>
+                    
+                    <div class="mb-4 flex flex-wrap gap-2">
+                        <span class="bg-cyber-gray px-2 py-1 rounded-md text-xs">Python</span>
+                        <span class="bg-cyber-gray px-2 py-1 rounded-md text-xs">Docker</span>
+                        <span class="bg-cyber-gray px-2 py-1 rounded-md text-xs">Kali Linux</span>
+                        <span class="bg-cyber-gray px-2 py-1 rounded-md text-xs">Metasploit</span>
+                    </div>
+                    
+                    <div class="cyber-border p-3 rounded-lg bg-cyber-gray bg-opacity-20">
+                        <h4 class="text-sm font-bold mb-1 text-cyber-blue">Recursos principais:</h4>
+                        <ul class="text-sm list-disc list-inside space-y-1">
+                            <li>Escaneamento automático de redes</li>
+                            <li>Detecção de vulnerabilidades em aplicações web</li>
+                            <li>Testes de engenharia social</li>
+                            <li>Relatórios detalhados com recomendações</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-cyber-black relative">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+                <span class="cyber-text">&lt;</span> Contato <span class="cyber-text">/&gt;</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="cyber-border p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-6 cyber-text">Envie uma mensagem</h3>
+                    
+                    <form id="contact-form" class="space-y-4">
+                        <div>
+                            <label for="name" class="block mb-2 text-sm">Nome</label>
+                            <input type="text" id="name" class="w-full bg-cyber-gray border border-cyber-green p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-cyber-green text-white" required>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block mb-2 text-sm">Email</label>
+                            <input type="email" id="email" class="w-full bg-cyber-gray border border-cyber-green p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-cyber-green text-white" required>
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block mb-2 text-sm">Assunto</label>
+                            <input type="text" id="subject" class="w-full bg-cyber-gray border border-cyber-green p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-cyber-green text-white" required>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block mb-2 text-sm">Mensagem</label>
+                            <textarea id="message" rows="5" class="w-full bg-cyber-gray border border-cyber-green p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-cyber-green text-white" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="cyber-button bg-cyber-green text-cyber-black px-6 py-3 rounded-md hover:bg-cyber-blue transition-all duration-300 font-bold w-full">
+                            <i class="fas fa-paper-plane mr-2"></i> Enviar Mensagem
+                        </button>
+                        
+                        <div id="form-status" class="hidden mt-4 p-3 rounded-md text-center"></div>
+                    </form>
+                </div>
+                
+                <div class="cyber-border p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-6 cyber-text">Informações de Contato</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-cyber-gray flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-cyber-green"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Email</h4>
+                                <p class="text-cyber-blue">contato@matheus.dev</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-cyber-gray flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-cyber-green"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Localização</h4>
+                                <p>Brasil</p>
+                            </div>
+                        </div>
+                        
+                        <div class="cyber-border p-4 rounded-lg bg-cyber-gray bg-opacity-20 mt-8">
+                            <h4 class="font-bold mb-3 text-center">Redes Sociais & Perfis</h4>
+                            
+                            <div class="flex justify-center space-x-4">
+                                <a href="#" class="w-10 h-10 rounded-full bg-cyber-gray flex items-center justify-center hover:bg-cyber-green hover:text-cyber-black transition-all duration-300">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-full bg-cyber-gray flex items-center justify-center hover:bg-cyber-green hover:text-cyber-black transition-all duration-300">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-full bg-cyber-gray flex items-center justify-center hover:bg-cyber-green hover:text-cyber-black transition-all duration-300">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-full bg-cyber-gray flex items-center justify-center hover:bg-cyber-green hover:text-cyber-black transition-all duration-300">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="cyber-border p-4 rounded-lg bg-cyber-black mt-6">
+                            <div class="terminal-body p-2 font-mono text-sm">
+                                <p class="mb-2"><span class="text-cyber-green">$</span> echo "Vamos trabalhar juntos?"</p>
+                                <p class="mb-2">Vamos trabalhar juntos?</p>
+                                <p><span class="text-cyber-green">$</span> <span class="terminal-cursor">_</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="py-8 bg-cyber-dark border-t border-cyber-green">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-center md:text-left">&copy; 2023 Matheus | <span class="cyber-text">Engenheiro de Software</span></p>
+                </div>
+                
+                <div class="flex space-x-4">
+                    <a href="#home" class="text-white hover:text-cyber-green transition-colors duration-300">Home</a>
+                    <a href="#about" class="text-white hover:text-cyber-green transition-colors duration-300">Sobre</a>
+                    <a href="#skills" class="text-white hover:text-cyber-green transition-colors duration-300">Habilidades</a>
+                    <a href="#projects" class="text-white hover:text-cyber-green transition-colors duration-300">Projetos</a>
+                    <a href="#contact" class="text-white hover:text-cyber-green transition-colors duration-300">Contato</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to top button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 rounded-full bg-cyber-green text-cyber-black flex items-center justify-center opacity-0 invisible transition-all duration-300 hover:bg-cyber-blue">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Contact form handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formStatus = document.getElementById('form-status');
+            formStatus.classList.remove('hidden', 'bg-red-500', 'bg-green-500');
+            formStatus.classList.add('bg-cyber-green', 'text-cyber-black');
+            formStatus.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Enviando mensagem...';
+            
+            // Simulate form submission
+            setTimeout(() => {
+                formStatus.classList.remove('bg-cyber-green');
+                formStatus.classList.add('bg-green-500');
+                formStatus.innerHTML = '<i class="fas fa-check-circle mr-2"></i> Mensagem enviada com sucesso!';
+                
+                // Reset form
+                document.getElementById('contact-form').reset();
+            }, 1500);
+        });
+        
+        // Back to top button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+        
+        // Matrix background effect
+        const canvas = document.getElementById('matrix');
+        const ctx = canvas.getContext('2d');
+        
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        
+        const characters = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        const fontSize = 14;
+        const columns = canvas.width / fontSize;
+        
+        const drops = [];
+        for (let i = 0; i < columns; i++) {
+            drops[i] = 1;
+        }
+        
+        function drawMatrix() {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            ctx.fillStyle = '#00ff00';
+            ctx.font = `${fontSize}px monospace`;
+            
+            for (let i = 0; i < drops.length; i++) {
+                const text = characters.charAt(Math.floor(Math.random() * characters.length));
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                
+                drops[i]++;
+            }
+        }
+        
+        setInterval(drawMatrix, 50);
+        
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+        
+        // Typing effect for skills
+        const skills = document.querySelectorAll('.progress-fill');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.width = entry.target.parentElement.previousElementSibling.lastElementChild.textContent;
+                } else {
+                    entry.target.style.width = '0%';
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        skills.forEach(skill => {
+            skill.style.width = '0%';
+            observer.observe(skill);
+        });
+    </script>
 </body>
-<script src="https://kit.fontawesome.com/6d2133063a.js" crossorigin="anonymous"></script>
-<script src="/main/main.js"></script>
-<script>
-    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-</script>
-<script defer src="/_vercel/insights/script.js"></script>
-
 </html>
